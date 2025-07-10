@@ -20,6 +20,10 @@ define view Z_I_BOOKSUPPL_LS
       price,
       @Semantics.currencyCode: true
       currency,
+      //local ETag field
+      @Semantics.systemDateTime.localInstanceLastChangedAt: true
+      last_changed_at,
+            
       _Booking,
       _Travel,
       _Product,
