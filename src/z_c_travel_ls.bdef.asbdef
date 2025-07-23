@@ -18,7 +18,7 @@ use etag
 define behavior for Z_C_BOOKING_LS alias BookingProcessor
 {
   use update;
-  //  use delete;
+  use delete;
 
   use association _Travel;
   use association _BookingSupplement { create; }
@@ -27,7 +27,7 @@ define behavior for Z_C_BOOKING_LS alias BookingProcessor
 define behavior for Z_C_BOOKSUPPL_LS alias SupplementProcessor
 {
   use update;
-  //  use delete;
+  use delete;
 
   use association _Travel;
   use association _Booking;

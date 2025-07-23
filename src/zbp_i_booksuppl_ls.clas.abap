@@ -1,15 +1,5 @@
-class ZBP_I_BOOKSUPPL_LS definition
-  public
-  abstract
-  final
-  create public .
-
-public section.
-protected section.
-private section.
+CLASS zbp_i_booksuppl_ls DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF z_i_travel_ls.
 ENDCLASS.
 
-
-
-CLASS ZBP_I_BOOKSUPPL_LS IMPLEMENTATION.
+CLASS zbp_i_booksuppl_ls IMPLEMENTATION.
 ENDCLASS.

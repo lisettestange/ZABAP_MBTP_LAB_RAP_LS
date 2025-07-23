@@ -3,15 +3,13 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZBP_I_BOOKSUPPL_LS</CLSNAME>
+    <CLSNAME>ZCL_EXT_UPDATE_ENT_LS</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Behavior Implementation for Z_I_TRAVEL_LS</DESCRIPT>
-    <CATEGORY>06</CATEGORY>
+    <DESCRIPT>Commit Entity</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
     <UNICODE>X</UNICODE>
-    <CLSDEFINT>Z_I_TRAVEL_LS</CLSDEFINT>
    </VSEOCLASS>
   </asx:values>
  </asx:abap>
