@@ -47,8 +47,19 @@ CLASS zcl_carga_datos_ls IMPLEMENTATION.
     INTO CORRESPONDING FIELDS OF TABLE @lt_booking.
 
 *   Busca la data de la tabla book_sup y lo deja en la tabla interna lt_book_sup
-    SELECT * FROM /dmo/book_suppl
-    FOR ALL ENTRIES IN @lt_booking
+**    SELECT * FROM /dmo/book_suppl
+**    FOR ALL ENTRIES IN @lt_booking
+**    WHERE travel_id EQ @lt_booking-travel_id
+**    AND booking_id EQ @lt_booking-booking_id
+**    INTO CORRESPONDING FIELDS OF TABLE @lt_book_sup.
+
+    SELECT travel_id,
+            booking_id,
+            booking_supplement_id,
+            price,
+            currency_code AS currency
+      FROM /dmo/book_suppl
+      FOR ALL ENTRIES IN @lt_booking
     WHERE travel_id EQ @lt_booking-travel_id
     AND booking_id EQ @lt_booking-booking_id
     INTO CORRESPONDING FIELDS OF TABLE @lt_book_sup.
